@@ -1,8 +1,6 @@
 const path = require("path");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
-const sharp = require("sharp");
 module.exports = {
   mode: "none",
   entry: {
@@ -46,55 +44,6 @@ module.exports = {
         include: path.resolve(__dirname, "src/"),
         use: ["html-loader"],
       },
-    ],
-  },
-  optimization: {
-    minimizer: [
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.sharpMinify,
-          options: {
-            encodeOptions: {
-              jpeg: {
-                quality: 100,
-              },
-              webp: {
-                lossless: true,
-              },
-              avif: {
-                lossless: true,
-              },
-              png: {
-                quality: 70,
-              },
-              gif: {},
-            },
-          },
-        },
-        generator: [
-          {
-            type: "asset",
-            implementation: ImageMinimizerPlugin.imageminGenerate,
-            options: {
-              plugins: ["imagemin-webp"],
-            },
-          },
-        ],
-      }),
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.svgoMinify,
-          options: {
-            encodeOptions: {
-              // Pass over SVGs multiple times to ensure all optimizations are applied. False by default
-              multipass: true,
-              plugins: [
-                "preset-default",
-              ],
-            },
-          },
-        },
-      }),
     ],
   },
   plugins: [
