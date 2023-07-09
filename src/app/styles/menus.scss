@@ -6,9 +6,6 @@
       @content;
     }
   }
-
-
-
 .features_container{
     display: flex;
 }
@@ -31,8 +28,6 @@
         cursor: pointer;
     }
 }
-
-
 .company_container{
     display: flex;
 }
@@ -40,7 +35,6 @@
     display: flex;
     gap: 10px;
 }
-
 .menu_company{
     position: absolute;
     cursor: default;
@@ -58,6 +52,80 @@
         cursor: pointer;
     }
 }
+
+
+//Mobile menu
+.menu{
+    z-index: 1;
+}
+.mobile_menu{
+    display: none;
+    @include mobile{
+       
+    
+    position: absolute;
+    right: 50px;
+    height: 100vh;
+    min-height: 600px;
+    top: 0;
+    right: 0;
+    width: 250px;
+    padding: 100px 15px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    color: $almost-gray;
+   
+    & #company_mobile{
+        display: flex;
+        gap: 10px;
+    }
+    & #features_mobile{
+        display: flex;
+        gap: 10px;
+    }
+    &_ul{
+     
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     &_item{
+        display: flex;
+        cursor: pointer;
+     }
+    }
+    &_buttons{
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        &_login{
+            padding: 10px  90px;
+            color: $almost-gray;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+        &_register{
+            padding: 10px 80px;
+            border-radius: 12px;
+            color: $almost-gray;
+            border:  $border-register 2px solid;
+            cursor: pointer;
+        }
+    }
+
+    & li {
+        list-style: none;
+    }
+ 
+}
+}
+
+
 
 .hidden {
     display: none;

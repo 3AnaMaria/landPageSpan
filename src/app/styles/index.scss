@@ -12,14 +12,15 @@
 * {
   font-family: "Epilogue", sans-serif;
 }
-body{
-  position: relative;
-}
+// body{
+//   position: relative;
+// }
 .header {
   display: flex;
   justify-content: space-between;
   margin: 30px;
   align-items: center;
+  position: relative;
   font-weight: 500;
   &_first {
     display: flex;

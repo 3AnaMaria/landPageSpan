@@ -32,9 +32,21 @@
         <div class="header_second">
             <button class="login">Login</button>
             <button class="register">Register</button>
-            <button class="menu"><img src="../assets/icon-menu.svg" alt="menu"></button>
+            <button class="menu" id="menu"><img id="menu_icon" src="../assets/icon-menu.svg" alt="menu"> <img id="menu_close_icon" class="hidden" src="../assets/icon-close-menu.svg" alt="cross"></button>
         </div>
     </header>
+        <section class="mobile_menu hidden" id="mobile_menu">
+            <ul class="mobile_menu_ul">
+                <li class="mobile_menu_ul_item"><span id="features_mobile">Features <figure> <img  class="down_arrow" id="down_arrow_features_mobile" src="../assets/icon-arrow-down.svg" alt="down_arrow"><img id="up_arrow_features_mobile" class="hidden" src="../assets/icon-arrow-up.svg" alt="up_arrow"></figure></span></li>
+                <li class="mobile_menu_ul_item"><span id="company_mobile">Company <figure> <img class="down_arrow"  id="down_arrow_company_mobile" src="../assets/icon-arrow-down.svg" alt="down_arrow"><img id="up_arrow_company_mobile" class="hidden" src="../assets/icon-arrow-up.svg" alt="up_arrow"></figure></span></li>
+                <li class="mobile_menu_ul_item">Careers</li>
+                <li class="mobile_menu_ul_item">About</li>
+            </ul>
+            <article class="mobile_menu_buttons">
+                <button class="mobile_menu_buttons_login">Login</button>
+                <button class="mobile_menu_buttons_register">Register</button>
+            </article>
+        </section>
 <main class="fullbody">
     <section class="main">
         <figure class="main_figure"> 
@@ -42,7 +54,6 @@
             <img src="../assets/image-hero-mobile.png" alt="landingpage_img" class="hero_mobile">
         </figure>
     </section>
-    
     <section class="footer">
     <div  class="footer_first">
     <h2>
