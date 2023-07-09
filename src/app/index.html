@@ -10,8 +10,22 @@
     <header class="header">
         <div class="header_first"> 
         <figure> <img src="../assets/logo.svg" alt="snap_logo"></figure>
-        <span class="header_first_buttons">Features <figure> <img class="down_arrow" src="../assets/icon-arrow-down.svg" alt="down_arrow"></figure></span>
-        <span  class="header_first_buttons">Company <figure> <img class="down_arrow" src="../assets/icon-arrow-down.svg" alt="down_arrow"></figure></span>
+        <span class="header_first_buttons features_container"><span id="features">Features <figure> <img  class="down_arrow" id="down_arrow_features" src="../assets/icon-arrow-down.svg" alt="down_arrow"><img id="up_arrow_features" class="hidden" src="../assets/icon-arrow-up.svg" alt="up_arrow"></figure></span>
+        <ul  class="menu_features hidden">
+            <li class="menu_features_item"><figure><img src="../assets/icon-todo.svg" alt="todoList"></figure>To do List</li>
+            <li class="menu_features_item"><figure><img src="../assets/icon-calendar.svg" alt="calendar"></figure>Calendar</li>
+            <li class="menu_features_item"><figure><img src="../assets/icon-reminders.svg" alt="reminders"></figure>Reminders</li>
+            <li class="menu_features_item"><figure><img src="../assets/icon-planning.svg" alt="planning"></figure>Planning</li>
+        </ul>
+
+        </span>
+        <span  class="header_first_buttons company_container"><span id="company">Company <figure> <img class="down_arrow"  id="down_arrow_company" src="../assets/icon-arrow-down.svg" alt="down_arrow"><img id="up_arrow_company" class="hidden" src="../assets/icon-arrow-up.svg" alt="up_arrow"></figure></span>
+            <ul class="menu_company hidden">
+                <li class="menu_company_item">History</li>
+                <li class="menu_company_item">Our team</li>
+                <li class="menu_company_item">Blog</li>
+            </ul>
+        </span>
         <span class="header_first_buttons">Careers <figure> <img class="down_arrow" src="../assets/icon-arrow-down.svg" alt="down_arrow"></figure></span>
         <span class="header_first_buttons">About<figure> <img class="down_arrow" src="../assets/icon-arrow-down.svg" alt="down_arrow"></figure></span>
         </div>
@@ -52,7 +66,7 @@
     </section>
 </main>
 <footer>
-    <!-- <script src="./scripts/index.js" type="module"></script> -->
+    <script src="./scripts/index.js" type="module"></script> 
 </footer>
 </body>
 </html>

@@ -1,6 +1,7 @@
 @import "./variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 @import "./reset.scss";
+@import "./menus.scss";
 
 @mixin mobile {
   @media (max-width: 800px) {
@@ -10,6 +11,9 @@
 
 * {
   font-family: "Epilogue", sans-serif;
+}
+body{
+  position: relative;
 }
 .header {
   display: flex;
