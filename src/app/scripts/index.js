@@ -52,3 +52,9 @@ company.addEventListener('click', ()=>{
         menu_icon.classList.remove('hidden')
       }
  })
+
+const toggleMenu = (clickedEl, openingEl) => {
+  clickedEl.addEventListener('click', () => {
+      openingEl.classList.toggle('inactive');
+})
+}
