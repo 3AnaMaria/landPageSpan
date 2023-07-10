@@ -34,6 +34,9 @@
       color: $beauty-gray;
       @include mobile {
         display: none;
+        &:hover {
+          color: $almost-black;
+        }
       }
       &:hover {
         background-color: #fff;
@@ -65,6 +68,9 @@
       font-weight: 600; 
       @include mobile {
         display: none;
+        &:hover {
+          color: $almost-black;
+        }
       }
     }
     .register {
@@ -77,6 +83,9 @@
       }
       @include mobile {
         display: none;
+        &:hover {
+          color: $almost-black;
+        }
       }
     }
     .menu {
@@ -85,6 +94,9 @@
         border: none;
         background: none;
         display: block;
+        &:hover {
+          color: $almost-black;
+        }
       }
     }
   }
@@ -197,6 +209,9 @@
         }
         @include mobile {
           display: block;
+          &:hover {
+            color: $almost-black;
+          }
         }
       }
     span{
@@ -242,5 +257,4 @@
     }
   }
 }
-
 
