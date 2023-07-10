@@ -8,44 +8,76 @@
 </head>
 <body>
     <header class="header">
-        <div class="header_first">
-            <figure> <img src="../assets/logo.svg" alt="snap_logo"></figure>
-            <span class="header_first_buttons">Features <figure> <img class="down_arrow" src="../assets/icon-arrow-down.svg" alt="down_arrow"></figure></span>
-            <span  class="header_first_buttons">Company <figure> <img class="down_arrow" src="../assets/icon-arrow-down.svg" alt="down_arrow"></figure></span>
-            <span class="header_first_buttons">Careers <figure> <img class="down_arrow" src="../assets/icon-arrow-down.svg" alt="down_arrow"></figure></span>
-            <span class="header_first_buttons">About<figure> <img class="down_arrow" src="../assets/icon-arrow-down.svg" alt="down_arrow"></figure></span>
+        <div class="header_first"> 
+        <figure> <img src="../assets/logo.svg" alt="snap_logo"></figure>
+        <span class="header_first_buttons features_container"><span id="features">Features <figure> <img  class="down_arrow" id="down_arrow_features" src="../assets/icon-arrow-down.svg" alt="down_arrow"><img id="up_arrow_features" class="hidden" src="../assets/icon-arrow-up.svg" alt="up_arrow"></figure></span>
+        <ul  class="menu_features hidden">
+            <li class="menu_features_item"><figure><img src="../assets/icon-todo.svg" alt="todoList"></figure>To do List</li>
+            <li class="menu_features_item"><figure><img src="../assets/icon-calendar.svg" alt="calendar"></figure>Calendar</li>
+            <li class="menu_features_item"><figure><img src="../assets/icon-reminders.svg" alt="reminders"></figure>Reminders</li>
+            <li class="menu_features_item"><figure><img src="../assets/icon-planning.svg" alt="planning"></figure>Planning</li>
+        </ul>
+
+        </span>
+        <span  class="header_first_buttons company_container"><span id="company">Company <figure> <img class="down_arrow"  id="down_arrow_company" src="../assets/icon-arrow-down.svg" alt="down_arrow"><img id="up_arrow_company" class="hidden" src="../assets/icon-arrow-up.svg" alt="up_arrow"></figure></span>
+            <ul class="menu_company hidden">
+                <li class="menu_company_item">History</li>
+                <li class="menu_company_item">Our team</li>
+                <li class="menu_company_item">Blog</li>
+            </ul>
+        </span>
+        <span class="header_first_buttons">Careers <figure> <img class="down_arrow" src="../assets/icon-arrow-down.svg" alt="down_arrow"></figure></span>
+        <span class="header_first_buttons">About<figure> <img class="down_arrow" src="../assets/icon-arrow-down.svg" alt="down_arrow"></figure></span>
         </div>
         <div class="header_second">
             <button class="login">Login</button>
             <button class="register">Register</button>
-            <button class="menu"><img src="../assets/icon-menu.svg" alt="menu"></button>
+            <button class="menu" id="menu"><img id="menu_icon" src="../assets/icon-menu.svg" alt="menu"> <img id="menu_close_icon" class="hidden" src="../assets/icon-close-menu.svg" alt="cross"></button>
         </div>
     </header>
-    <main class="fullbody">
-        <section class="main">
-            <figure class="main_figure">
-                <img src="../assets/image-hero-desktop.png" alt="landingpage_img" class="hero_desktop">
-                <img src="../assets/image-hero-mobile.png" alt="landingpage_img" class="hero_mobile">
-            </figure>
+        <section class="mobile_menu hidden" id="mobile_menu">
+            <ul class="mobile_menu_ul">
+                <li class="mobile_menu_ul_item"><span id="features_mobile">Features <figure> <img  class="down_arrow" id="down_arrow_features_mobile" src="../assets/icon-arrow-down.svg" alt="down_arrow"><img id="up_arrow_features_mobile" class="hidden" src="../assets/icon-arrow-up.svg" alt="up_arrow"></figure></span></li>
+                <li class="mobile_menu_ul_item"><span id="company_mobile">Company <figure> <img class="down_arrow"  id="down_arrow_company_mobile" src="../assets/icon-arrow-down.svg" alt="down_arrow"><img id="up_arrow_company_mobile" class="hidden" src="../assets/icon-arrow-up.svg" alt="up_arrow"></figure></span></li>
+                <li class="mobile_menu_ul_item">Careers</li>
+                <li class="mobile_menu_ul_item">About</li>
+            </ul>
+            <article class="mobile_menu_buttons">
+                <button class="mobile_menu_buttons_login">Login</button>
+                <button class="mobile_menu_buttons_register">Register</button>
+            </article>
         </section>
-        <section class="footer">
-            <div  class="footer_first">
-                <h2>Make remote work</h2>
-                <span>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar</span>
-                <button class="learn_more">Learn more</button>
-            </div>
-            <div  class="footer_second">
-                <ul>
-                    <li><img src="../assets/client-databiz.svg" alt="databiz"></li>
-                    <li><img src="../assets/client-audiophile.svg" alt="audiophile"></li>
-                    <li><img src="../assets/client-meet.svg" alt="meet"></li>
-                    <li> <img src="../assets/client-maker.svg" alt="maker"></li>
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <script src="./scripts/index.js" type="module"></script>
-    </footer>
+<main class="fullbody">
+    <section class="main">
+        <figure class="main_figure"> 
+            <img src="../assets/image-hero-desktop.png" alt="landingpage_img" class="hero_desktop"">
+            <img src="../assets/image-hero-mobile.png" alt="landingpage_img" class="hero_mobile">
+        </figure>
+    </section>
+    <section class="footer">
+    <div  class="footer_first">
+    <h2>
+        Make remote work
+    </h2>
+    <span>
+        Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar
+    </span>
+    <button class="learn_more">
+        Learn more
+    </button>
+    </div>
+    <div  class="footer_second">
+        <ul>
+            <li><img src="../assets/client-databiz.svg" alt="databiz"></li>
+            <li><img src="../assets/client-audiophile.svg" alt="audiophile"></li>
+            <li><img src="../assets/client-meet.svg" alt="meet"></li>
+            <li> <img src="../assets/client-maker.svg" alt="maker"></li>
+        </ul>
+    </div>
+    </section>
+</main>
+<footer>
+    <script src="./scripts/index.js" type="module"></script> 
+</footer>
 </body>
 </html>
